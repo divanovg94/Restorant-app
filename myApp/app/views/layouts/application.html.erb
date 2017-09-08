@@ -14,7 +14,7 @@
   <body>
 
   <% if user_signed_in? %>
-  <p> Hello, <%= current_user.name %> -<%= link_to 'Sign_out' , destroy_user_session_path, :method => "delete" %> </p>
+  <div id="sign_out_div">  <%= current_user.name %> -<%= link_to 'Sign out', destroy_user_session_path, :id => 'sign_out' , :method => "delete" %> </div>
   <br>
   <% end %>
 <!--   <div id="current_date">

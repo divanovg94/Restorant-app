@@ -2,7 +2,7 @@
     event.preventDefault();
     var comm= ", "
     var searchIDs = $("#find-table input:checkbox:checked").map(function(){
-      return $(this).val() + comm;
+      return $(this).val()
     }).get();
     $("#foodiwant").html(searchIDs)
     alert(searchIDs);

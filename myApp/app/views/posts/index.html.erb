@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 <br>
+<div id="content_div">
 <div id="welcome">
 <h1>Wellcome <%= @usernamef.capitalize %>  <%=@usernamel.capitalize %> . </h1>
 </div>
@@ -11,8 +12,10 @@
 <div id="your_order"><h2> Your order :</h2>
 <h2 id="foodiwant" value="">You didn't order anything </h2></div>
 <br>
-<div id="myposts">
-<h1 id="your_posts">Your Posts</h1>
+
+</div>
+<div id="div_table">
+
 <table>
   <thead>
     <tr>
@@ -40,6 +43,7 @@
 
 <h1><%= link_to 'Create New Post', new_post_path %> </h1>
 </div>
+
 <div id="table_menu">
 <form>
 <table id="find-table">
