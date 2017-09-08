@@ -1,0 +1,129 @@
+<p id="notice"><%= notice %></p>
+<br>
+<div id="welcome">
+<h1>Wellcome <%= @usernamef.capitalize %>  <%=@usernamel.capitalize %> . </h1>
+</div>
+<br>
+  <div id="current_date">
+  <h2 id="hdate"> CurrentDate: </h2> <h2 id="date"></h2> 
+  </div>
+<br>
+<div id="your_order"><h2> Your order :</h2>
+<h2 id="foodiwant" value="">You didn't order anything </h2></div>
+<br>
+<div id="myposts">
+<h1 id="your_posts">Your Posts</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.title %></td>
+        <td><%= post.content %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<h1><%= link_to 'Create New Post', new_post_path %> </h1>
+</div>
+<div id="table_menu">
+<form>
+<table id="find-table">
+  <tr>
+    <th><h2>Food</h2></th>
+    <th><h2>Price</h2></th> 
+    <th><h2>How Many</h2></th>
+  </tr>
+  <tr>
+    <td id="food"><h2>Salmon       <input class="checkbox-style" type="checkbox" name="Salmon" value="Salmon"></h2> </td>
+    <td><h3>3.90 $</h3></td> 
+    <td id="price"><select >
+    <option value="1"><h3>1</h3></option>
+    <option value="2"><h3>2</h3></option>
+    <option value="3"><h3>3</h3></option>
+</select></td>
+  </tr>
+  <tr>
+    <td id="food"><h2>Burger     <input class="checkbox-style" type="checkbox" name="Burger" value="Burger"></h2> </td>
+   <td><h3>1.20 $</h3></td> 
+    <td id="price"><select >
+    <option value="1"><h3>1</h3></option>
+    <option value="2"><h3>2</h3></option>
+    <option value="3"><h3>3</h3></option>
+</select></td>
+  </tr>
+    <tr>
+    <td id="food"><h2>Apple      <input class="checkbox-style" type="checkbox" name="Apple" value="Apple"></h2> </td>
+   <td><h3>1.20 $</h3></td> 
+    <td id="price"><select >
+    <option value="1"><h3>1</h3></option>
+    <option value="2"><h3>2</h3></option>
+    <option value="3"><h3>3</h3></option>
+</select></td>
+  </tr>
+    <tr>
+    <td id="food"><h2>Tarator      <input class="checkbox-style" type="checkbox" name="Tarator" value="Tarator"></h2> </td>
+   <td><h3>3.90 $</h3></td> 
+    <td id="price"><select >
+    <option value="1"><h3>1</h3></option>
+    <option value="2"><h3>2</h3></option>
+    <option value="3"><h3>3</h3></option>
+</select></td>
+  </tr>
+    <tr>
+    <td id="food"><h2>Parjola     <input class="checkbox-style" type="checkbox" name="Parjola" value="Parjola"></h2> </td>
+   <td><h3>1.90 $</h3></td> 
+    <td id="price"><select >
+    <option value="1"><h3>1</h3></option>
+    <option value="2"><h3>2</h3></option>
+    <option value="3"><h3>3</h3></option>
+</select></td>
+  </tr>
+    <tr>
+    <td id="food"><h2>Musaka      <input class="checkbox-style" type="checkbox" name="Musaka" value="Musaka"></h2> </td>
+   <td><h3>2.50 $</h3></td> 
+    <td id="price"><select >
+    <option value="1"><h3>1</h3></option>
+    <option value="2"><h3>2</h3></option>
+    <option value="3"><h3>3</h3></option>
+</select></td>
+  </tr>
+    <tr>
+    <td id="food"><h2>Kebapche       <input class="checkbox-style" type="checkbox" name="Kebapche" value="Kebapche"></h2> </td>
+   <td><h3>0.80 $</h3></td> 
+    <td id="price"><select >
+    <option value="1"><h3>1</h3></option>
+    <option value="2"><h3>2</h3></option>
+    <option value="3"><h3>3</h3></option>
+</select></td>
+  </tr>
+
+</table>
+ <input id="submit" type="submit" value="Submit">
+ <button id="button-delete" type="button">Delete!</button>
+</form>
+</div>
+<!-- <button id="button-delete" type="button">Delete!</button> -->
+<script>
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+</script>
+
+  
