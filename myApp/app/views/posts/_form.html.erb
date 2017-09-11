@@ -1,3 +1,4 @@
+<div id="main_edit_post">
 <%= form_with(model: post, local: true) do |form| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
@@ -11,17 +12,18 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :post_title %>
+  <div class="field" id="edit_post">
+<%= form.label :date, class: "edit_content" %> 
+    <h3 id="edit_post_title"> <%= form.text_field :title, id: :post_title , class: "edit_textarea"%> </h3>
   </div>
 
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content, id: :post_content %>
+  <div class="field" id="edit_post">
+   <%= form.label :Order,class: "edit_content" %> 
+    <h3 id="edit_post_content"> <%= form.text_area :content, id: :post_content , class: "edit_textarea"%> </h3>
   </div>
 
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
+</div>

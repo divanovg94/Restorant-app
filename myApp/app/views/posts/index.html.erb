@@ -19,8 +19,8 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Content</th>
+      <th><h3 class="order">Date</h3></th>
+      <th><h3 class="order">Your order</h3></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -29,11 +29,11 @@
   <tbody>
     <% @posts.each do |post| %>
       <tr>
-        <td><%= post.title %></td>
-        <td><%= post.content %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><h3 class="order"><%= post.title %></h3></td>
+        <td><h3 class="order"><%= post.content %></h3></td>
+        <td><h3 class="order"><%= link_to 'Show', post %></h3></td>
+        <td><h3 class="order"><%= link_to 'Edit', edit_post_path(post) %></h3></td>
+        <td><h3 class="order"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></h3></td>
       </tr>
     <% end %>
   </tbody>
@@ -41,7 +41,7 @@
 
 <br>
 
-<h1><%= link_to 'Create New Post', new_post_path %> </h1>
+<h1><%= link_to 'Make new order', new_post_path %> </h1>
 </div>
 
 <div id="table_menu">
