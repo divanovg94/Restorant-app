@@ -365,3 +365,165 @@ box-shadow:         12px 12px 29px #555;
   background-position: 0 0, 15px 15px;
 
 }*/
+
+#restorant{
+  font-size:1.2em;
+  margin: 0 auto;
+  width:60%;
+  height:80%;
+ padding-top:5em;
+}
+
+#contact_div{
+ 
+  width:80%;
+  height:80%;
+  margin:0 auto;
+
+
+}
+iframe{
+
+  margin: 0 auto;
+  width:50%;
+  height:50%;
+  margin-top:5em;
+  margin-left:20em;
+}
+
+#hanami_location{
+  color:black;
+  font-size:1.5em;
+}
+.page{
+  display: flex;
+  width: 100vw;
+  height:100vh;
+}
+.main_container{
+  width:1000px;
+  display:block;
+  margin: 0 auto;
+  height:400px;
+  margin-left:18em;
+  margin-bottom:15em;
+  align-self:center;
+  position: relative;
+  overflow:hidden;
+  box-shadow:0px 0px 4px black;
+  border-radius:5px;
+}
+.long_container{
+  height:100%;
+}
+.item{
+  height:100%;
+  width:200px;
+  float:left;
+}
+.see_previous,.see_next{
+  height:100%;
+  width:50px;
+ 
+  position:absolute;
+  left:0;
+  display:flex;
+  transition: all 0.2s ease-in-out;
+}
+
+.see_next{
+  right:0;
+  left:auto;
+
+}
+.arrow_next{
+  transform: rotate(180deg);
+}
+.arrow_previous,.arrow_next{
+  width:100%;
+  align-self: center;
+}
+.see_previous:hover,.see_next:hover{
+  background-color:rgba(0,0,0,0.5);
+}
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine{
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+#one{
+  background-image: url("/assets/01.jpg");
+}
+#two{
+  background-image: url("/assets/02.jpg");
+}
+#three{
+  background-image: url("/assets/03.jpg");
+}
+#four{
+  background-image: url("/assets/04.jpg");
+}
+#five{
+  background-image: url("/assets/05.jpg");
+}
+#six{
+  background-image: url("/assets/06.jpg");
+}
+#seven{
+  background-image: url("/assets/07.jpg");
+}
+#eight{
+  background-image: url("/assets/08.jpg");
+}
+#nine{
+  background-image: url("/assets/09.jpg");
+}
+#ten{
+    background-image: url("/assets/10.jpg");
+}
+#eleven{
+ background-image: url("/assets/11.jpg");
+}
+#twelve{
+ background-image: url("/assets/12.jpg");
+}
+#thirteen{
+ background-image: url("/assets/13.jpg");
+}
+#fourteen{
+ background-image: url("/assets/14.jpg");
+}
+#fifteen{
+ background-image: url("/assets/15.jpg");
+}
+#sixteen{
+ background-image: url("/assets/16.jpg");
+}
+#seventeen{
+ background-image: url("/assets/17.jpg");
+}
+#eighteen{
+ background-image: url("/assets/18.jpg");
+}
+#nineteen{
+ background-image: url("/assets/19.jpg");
+}
+#twenty{
+ background-image: url("/assets/20.jpg");
+}
+
+#lunch_menu{
+   margin-left:35em;
+   margin-top:10em;
+    position: absolute;
+    width:50%;
+    height:50%;
+}

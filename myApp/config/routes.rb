@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+	get "restorant/restorant"
+  get 'restorant/gallery'
+
+  get 'restorant/lunch_menu'
+
+  get 'restorant/wedding_menu'
+
+  get 'restorant/contact'
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root 'home#index'
 
