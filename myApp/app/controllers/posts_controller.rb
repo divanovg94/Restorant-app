@@ -28,6 +28,8 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = current_user.posts.build(post_params)
+    @post.user_first_name = current_user.first_name
+    @post.user_last_name = current_user.last_name
 
     respond_to do |format|
       if @post.save
