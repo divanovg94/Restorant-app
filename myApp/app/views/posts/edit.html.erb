@@ -2,9 +2,9 @@
 
 <%= render 'form', post: @post %>
 <div id="show_div">
-<%= link_to 'Show', @post ,class: "edit_show_back"%> 
+<%= link_to 'Show', @post ,class: "button_like_href", id: "button_like_href_edit_show" %> 
 </div>
 
 <div id="back_div">
-<%= link_to 'Back', posts_path ,class: "edit_show_back"%>
+<%= link_to 'Back', posts_path ,class: "button_like_href", id: "button_like_href_edit_back" %>
 </div>
