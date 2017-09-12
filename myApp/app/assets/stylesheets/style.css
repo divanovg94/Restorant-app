@@ -405,7 +405,7 @@ iframe{
   width:90em;
   display:block;
   margin: 0 auto;
-  height:400px;
+  height:30em;
   margin-left:10em;
   margin-bottom:15em;
   align-self:center;
@@ -529,7 +529,7 @@ iframe{
     height:50%;
 }
 #wedding_menu{
-  margin-left:40em;
+  margin-left:30em;
   margin-top:5em;
 }
 strong{
@@ -715,19 +715,8 @@ table, th, td {
 
 }
 }
-@media only screen and (min-width: 300px) and (max-width:800px){
-table, th, td {
-    border: 1px solid black;
-   
-    width:40%;
-  
-       margin-left:auto; 
-    margin-right:auto;
-        margin-left:30em;
 
-}
-}
-@media only screen and (max-width: 1200px) and (min-width:800px){
+@media only screen and (min-width: 768px) and (max-width:1024px){
 #button-delete {
   margin-left:1em;
  float:right;
@@ -778,4 +767,280 @@ table, th, td {
   display: inline;
 
 }
+li{
+  color:black;
+  font-size:1.7em;
+
 }
+h4{
+  font-size:1.5em;
+}
+#wedding_menu{
+  margin-left:5em;
+  margin-top:5em;
+}
+/*.page{
+  display: flex;
+  width: 100vw;
+  height:100vh;
+}
+
+.long_container{
+  height:100%;
+}
+.item{
+  height:100%;
+  width:200px;
+  float:left;
+}
+.main_container{
+  width:67em;
+  display:block;
+  margin: 0 auto;
+  height:30em;
+ margin-right:10em;
+  margin-bottom:50em;
+  align-self:center;
+  position: relative;
+  overflow:hidden;
+  box-shadow:0px 0px 4px black;
+  border-radius:5px;
+}*/
+}
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px){
+      li{
+  color:black;
+  font-size:1em;
+
+}
+h4{
+  font-size:0.8em;
+}
+#wedding_menu{
+  margin-left:5em;
+  margin-top:5em;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 412px){
+      li{
+  color:black;
+  font-size:1em;
+
+}
+h4{
+  font-size:0.8em;
+}
+#wedding_menu{
+  margin-left:5em;
+  margin-top:5em;
+}
+.main_container{
+  width:67em;
+  display:block;
+  margin: 0 auto;
+  height:30em;
+ margin-right:10em;
+  margin-bottom:50em;
+  align-self:center;
+  position: relative;
+  overflow:hidden;
+  box-shadow:0px 0px 4px black;
+  border-radius:5px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/*@media only screen and (min-width: 900px) and (max-width:1024px){
+.main_container{
+  width:67em;
+  display:block;
+  margin: 0 auto;
+  height:30em;
+ margin-right:10em;
+  margin-bottom:50em;
+  align-self:center;
+  position: relative;
+  overflow:hidden;
+  box-shadow:0px 0px 4px black;
+  border-radius:5px;
+}
+}*/
+/*@media (orientation:landscape)and  (min-device-height:1000px) and(min-width: 700px) and (max-width:899px){
+.main_container{
+  width:60em;
+  display:block;
+  margin: 0 auto;
+  height:30em;
+
+  margin-left:10em;
+  align-self:center;
+  position: relative;
+  overflow:hidden;
+  box-shadow:0px 0px 4px black;
+  border-radius:5px;
+}
+.long_container{
+  height:100%;
+}
+.item{
+  height:100%;
+  width:200px;
+  float:left;
+}
+.page{
+  display: flex;
+  width: 100vw;
+  height:100vh;
+  margin-bottom:50em;
+}
+}
+*/
+
+
+
+
+
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width:1024px){
+  .page{
+  display: flex;
+  width: 100vw;
+  height:100vh;
+}
+
+.long_container{
+  height:100%;
+}
+.item{
+  height:100%;
+  width:200px;
+  float:left;
+}
+.main_container{
+  width:67em;
+  display:block;
+  margin: 0 auto;
+  height:30em;
+ margin-right:10em;
+  margin-bottom:50em;
+  align-self:center;
+  position: relative;
+  overflow:hidden;
+  box-shadow:0px 0px 4px black;
+  border-radius:5px;
+}
+iframe{
+  height:40em;
+  margin:0 auto;
+  margin-left:10em;
+  width:35em;
+}
+#hanami_location{
+  padding-top:2em;
+  margin-left:1em;
+  font-size:1.6em;
+}
+#lunch_menu{
+  width:90%;
+  height:50%;
+  margin:0 auto;
+  margin-left:3em;
+  font-size:1.2em;
+  padding-top:5em;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen  and (min-device-width : 320px)  and (max-device-width : 414px){
+    .page{
+  display: flex;
+  width: 100vw;
+  height:100vh;
+}
+
+.long_container{
+  height:100%;
+}
+.item{
+  height:100%;
+  width:200px;
+  float:left;
+}
+.main_container{
+  width:63em;
+  display:block;
+  margin: 0 auto;
+  height:30em;
+ margin-right:10em;
+  margin-bottom:85em;
+  align-self:center;
+  position: relative;
+  overflow:hidden;
+  box-shadow:0px 0px 4px black;
+  border-radius:5px;
+}
+iframe{
+  height:40em;
+  margin:0 auto;
+  margin-left:10em;
+  width:35em;
+}
+#hanami_location{
+  padding-top:2em;
+  margin-left:1em;
+  font-size:1.6em;
+}
+#lunch_menu{
+  width:90%;
+  height:50%;
+  margin:0 auto;
+  margin-left:3em;
+  font-size:1.2em;
+  padding-top:5em;
+}
+      }
+
+
+
