@@ -12,7 +12,13 @@
   </head>
 
   <body>
-
+<div id="nav_menu_div">
+<h1 class="h_nav_menu"> <%= link_to "Restorant", restorant_restorant_path, class: 'nav_menu' %> </h1>
+<h1 class="h_nav_menu"> <%= link_to "Gallery", restorant_gallery_path, class: 'nav_menu' %> </h1>
+<h1 class="h_nav_menu"> <%= link_to "Lunch Menu", restorant_lunch_menu_path, class: 'nav_menu' %> </h1>
+<h1 class="h_nav_menu"> <%= link_to "Wedding Menu", restorant_wedding_menu_path, class: 'nav_menu' %> </h1>
+<h1 class="h_nav_menu"> <%= link_to "Contact", restorant_contact_path , class: 'nav_menu'%>  </h1>
+</div>
   <% if user_signed_in? %>
   <div id="sign_out_div">  <%= current_user.name %> -<%= link_to 'Sign out', destroy_user_session_path, :id => 'sign_out' , :method => "delete" %> </div>
   <br>
